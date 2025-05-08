@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+    gap: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .item:nth-child(1),
+  .item:nth-child(5) {
+    grid-column: 1 / 4;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+.item {
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+header.container {
+  background-image: url('assets/BG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; 
+  padding: 100px 0; 
+  font-size: 24px; 
+  border-bottom: 5px solid #333; 
+}
+.about-me {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5dc; /* Light beige background */
+  border-bottom: 5px solid #333; /* Optional: Adds a bottom border */
+}
+
+.about-me h2 {
+  font-family: 'Kaisei Decol', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile {
+  max-width: 300px;
+  text-align: left;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.profile p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.achievements {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.achievement {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+.achievement h3 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+footer.container {
+  background-color: #f5f5dc; color: #000; 
+  text-align: center; 
+  padding: 50px 0; 
+  font-family: 'Kaisei Decol', serif; 
+  font-size: 24px; 
+  border-top: 5px solid #333; 
+}
