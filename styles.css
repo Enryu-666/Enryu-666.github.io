@@ -11,10 +11,6 @@
     padding: 20px;
   }
   
-  .item:nth-child(1),
-  .item:nth-child(5) {
-    grid-column: 1 / 4;
-  }
 
   body {
     font-family: Arial, sans-serif;
@@ -23,13 +19,7 @@
     padding: 0;
   }
 
-.item {
-    margin: 10px;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 header.container {
   background-image: url('assets/BG.jpg');
   background-size: cover;
@@ -38,13 +28,11 @@ header.container {
   text-align: center; 
   padding: 100px 0; 
   font-size: 24px; 
-  border-bottom: 5px solid #333; 
 }
 .about-me {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f5f5dc; /* Light beige background */
-  border-bottom: 5px solid #333; /* Optional: Adds a bottom border */
+  background-color: #f5f5dc;
 }
 
 .about-me h2 {
@@ -102,10 +90,10 @@ header.container {
 }
 
 footer.container {
-  background-color: #f5f5dc; color: #000; 
+  background-color: #f5f5dc;
+  color: #000; 
   text-align: center; 
   padding: 50px 0; 
   font-family: 'Kaisei Decol', serif; 
   font-size: 24px; 
-  border-top: 5px solid #333; 
 }
