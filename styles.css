@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Miama&display=swap');
 .container {
     display: grid;
     grid-template-columns: 100px 1fr 100px;
@@ -29,6 +30,34 @@ header.container {
   padding: 100px 0; 
   font-size: 24px; 
 }
+
+.v4_3 {
+  width: 209px;
+  color: rgba(255,255,255,1);
+  position: center;
+  top: 443px;
+  left: 162px;
+  font-family: Odibee Sans;
+  font-weight: Regular;
+  font-size: 40px;
+  opacity: 1;
+  text-align: center;
+}
+
+.v3_11 {
+  width: 950px;
+  color: rgba(255,255,255,1);
+  position: center;
+  top: 378px;
+  left: 215px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Miama;
+  font-weight: Regular;
+  font-size: 80px;
+  opacity: 1;
+  text-align: center;
+}
+
 .about-me {
   text-align: center;
   padding: 50px 20px;
