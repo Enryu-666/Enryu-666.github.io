@@ -76,7 +76,7 @@ header.container > * {
 
 /*About me section*/
 .about-me {
-  text-align: center;
+  text-align: left;
   padding: 50px 20px;
   background-color: #f5f5dc;
 }
@@ -85,6 +85,7 @@ header.container > * {
   font-family: 'Kaisei Decol', serif;
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .about-content {
@@ -97,6 +98,13 @@ header.container > * {
 .profile {
   max-width: 300px;
   text-align: left;
+  border: 2px solid #302a29;
+  border-radius: 16px;
+  padding: 20px;
+  background: #484537;       
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  backdrop-filter: blur(10px);                      
+  transition: box-shadow 0.3s;
 }
 
 .profile img {
@@ -108,6 +116,7 @@ header.container > * {
 .profile p {
   font-size: 14px;
   line-height: 1.6;
+  color: #fff;
 }
 
 .contact p {
@@ -251,7 +260,7 @@ header.container > * {
     width: 110px;
     height: 110px;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     background: #fff;
     object-fit: contain;
 }
@@ -275,6 +284,99 @@ header.container > * {
     letter-spacing: 1px;
     display: inline-block;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/*Project section*/
+.project-section {
+    background: url('assets/KETAPANG.jpg') center/cover no-repeat;
+    min-height: 500px;
+    padding: 60px 0 60px 0;
+    position: relative;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    overflow: hidden;
+}
+.project-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.project-section > * {
+    position: relative ;
+    z-index: 2;
+}
+
+.project-title {
+    color: #fff;
+    font-family: 'Rakkas', serif;
+    font-size: 3rem;
+    text-align: CENTER;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    letter-spacing: 2px;
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.project-card {
+    width: 350px;
+    height: 270px;
+    border-radius: 32px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.glass {
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid rgba(255,255,255,0.18);
+}
+
+.project-desc {
+    min-width: 420px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 24px 32px;
+    margin: 0 10px;
+    border-radius: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.glass-border {
+    background: rgba(60,60,60,0.18);
+    border: 2px solid #f5e7b4;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 /*Footer section*/
