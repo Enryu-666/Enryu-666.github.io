@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Miama&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Feather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 
 
 
@@ -24,7 +25,7 @@
     padding: 0;
   }
 
-
+/*Header section*/
 header.container {
   background-image: url('assets/BG.jpg');
   background-size: cover;
@@ -73,6 +74,7 @@ header.container > * {
   text-align: center;
 }
 
+/*About me section*/
 .about-me {
   text-align: center;
   padding: 50px 20px;
@@ -204,14 +206,78 @@ header.container > * {
 }
 
 .vertical-text {
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-size: 2rem;
     color: #888;
     font-weight: bold;
     letter-spacing: 2px;
 }
+ /* Skill section*/
+.skills-section {
+    background:  #f5f5dc;
+    padding: 40px 0 60px 0;
+    border-radius: 20px;
+}
 
+.skills-columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.skills-software, .skills-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-software h2, .skills-personal h2 {
+    font-family: 'Rakkas', serif;
+    color: #98443a;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+}
+
+.software-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.skill-icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #fff;
+    object-fit: contain;
+}
+
+.personal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.personal-skill {
+    background: #98443a;
+    color: #fff;
+    font-family: 'Rakkas', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 28px;
+    border-radius: 25px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/*Footer section*/
 footer.container {
   background-color: #f5f5dc;
   color: #000; 
